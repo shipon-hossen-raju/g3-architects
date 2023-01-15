@@ -23,6 +23,8 @@ li {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+  text-transform: capitalize;
 }
 
 p {
@@ -88,7 +90,7 @@ nav.container .menu-list li a:hover {
 
 .banner-details h1 {
   font-weight: 700;
-  font-size: 64px;
+  font-size: 3em;
   line-height: 75px;
   color: #131313;
   margin-bottom: 5px;
@@ -96,8 +98,8 @@ nav.container .menu-list li a:hover {
 
 .banner-details p {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.1em;
+  line-height: 1.2em;
   margin-bottom: 23px;
 }
 
@@ -198,7 +200,7 @@ section.love-enjoy .container {
 
 .love-enjoy-details h2 {
   font-weight: 700;
-  font-size: 45px;
+  font-size: 2.3em;
   line-height: 53px;
   color: #131313;
   border-left: 3px solid #ff900e;
@@ -208,7 +210,7 @@ section.love-enjoy .container {
 
 .love-enjoy-details p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 26px;
   margin-bottom: 30px;
 }
@@ -225,15 +227,15 @@ section.love-enjoy .container {
 
 .detail-item h3 {
   font-weight: 600;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 1.3em;
+  line-height: 1em;
   color: #131313;
 }
 
 .detail-item p {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1em;
+  line-height: 1.4em;
   margin-top: 10px;
   margin-bottom: 0;
 }
@@ -242,23 +244,23 @@ section.love-enjoy .container {
   background: #ff900e;
   border-radius: 8px;
   display: inline-block;
-  padding: 40px;
+  padding: 35px;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  position: absolute;
-  bottom: 54px;
-  left: -54px;
+  margin-top: -3em;
+  margin-left: -3em;
+  isolation: isolate;
 }
 
 .love-enjoy-thumbnail span h1 {
-  font-size: 60px;
-  line-height: 70px;
+  font-size: 2.6em;
+  line-height: 1em;
 }
 
 .love-enjoy-thumbnail span p {
   font-weight: 500;
-  font-size: 25px;
+  font-size: 1.6em;
   line-height: 40px;
 }
 
@@ -293,18 +295,20 @@ section.some-facts .awards-project {
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   align-items: center;
+  gap: 30px;
 }
 
 .awards-project .item {
+  width: max-content;
   border: 1px solid #ff900e;
   border-radius: 8px;
-  padding: 30px;
+  padding: 20px;
   cursor: pointer;
   box-shadow: 0px 0px 11px rgb(0 0 0 / 29%);
 }
 
 .awards-project .item:hover {
-    transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .awards-project img {
@@ -381,7 +385,7 @@ section.getUpdates {
 }
 
 .getUpdates_content .subscribe_div {
-  width: 60vw;
+  width: 85%;
   margin: 0 auto;
   background-color: #ff595930;
   display: flex;
@@ -424,7 +428,7 @@ footer {
 footer p {
   font-weight: 400;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 2.1rem;
   text-align: center;
   color: #424242;
 }
@@ -488,9 +492,8 @@ footer p {
   }
 
   .love-enjoy-thumbnail span {
-    bottom: 23px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: -3em;
+    margin-left: calc(100% - 21em);
     padding: 30px;
     width: fit-content;
   }
@@ -563,6 +566,7 @@ footer p {
   .subscribe_div input {
     margin-bottom: 20px;
     border-radius: 8px;
+    width: 65vw;
   }
 
   .subscribe_div button {
@@ -579,7 +583,7 @@ footer p {
   }
 
   nav.container a h1 {
-    font-size: 2em;
+    font-size: 1.7em;
   }
 
   nav.container .menu-list {
@@ -589,7 +593,7 @@ footer p {
   }
 
   nav.container .menu-list li a {
-    padding: 3px 15px;
+    padding: 0.5em 0.6em;
   }
 
   .banner-content .banner-details {
@@ -597,8 +601,8 @@ footer p {
   }
 
   .banner-details h1 {
-    font-size: 2em;
-    line-height: 1.2em;
+    font-size: 1.9em;
+    line-height: 1.3em;
   }
 
   .banner-thumbnail {
@@ -620,7 +624,8 @@ footer p {
   }
 
   .features-details h1 {
-    margin-bottom: 24px;
+    margin-bottom: 0.6em;
+    font-size: 2.8em;
   }
 
   /*========================== Love & Enjoy Area ==========================*/
@@ -630,9 +635,8 @@ footer p {
   }
 
   .love-enjoy-thumbnail span {
-    bottom: 23px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: -3em;
+    margin-left: calc(100% - 24em);
     padding: 30px;
     width: fit-content;
   }
@@ -651,8 +655,8 @@ footer p {
   }
 
   section.some-facts h1 {
-    font-size: 3.1rem;
-    line-height: 25px;
+    font-size: 2.8em;
+    line-height: 0.7em;
   }
 
   section.some-facts .container > p {
@@ -679,7 +683,7 @@ footer p {
   section.our-sponsor h1,
   .section-title {
     margin-bottom: 20px;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
 
   section.our-sponsor p {
@@ -695,7 +699,7 @@ footer p {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-}
+  }
 
   ul.sponsor-items img {
     filter: grayscale(0);
@@ -720,12 +724,9 @@ footer p {
   }
 }
 
-/* Large devices (desktops) */
+
+/*============================ Large devices (desktops) ============================*/
 @media only screen and (min-width: 1001px) and (max-width: 1200px) {
-  .container {
-    background: yellow;
-  }
+
 }
-.hide {
-  display: none;
-}
+
